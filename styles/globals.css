@@ -14,3 +14,104 @@ a {
 * {
   box-sizing: border-box;
 }
+.iniciar-seccion{
+  width:350px;
+  border:1px solid rgb(196, 195, 195);
+  border-radius:10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  height:500px;
+  background-color: white;
+  margin-top: 40px;
+}
+.seccion{
+  padding: 20px;
+}
+.title-main h1{
+  color: #494848;
+}
+.title-main button{
+  background-color: rgb(78, 42, 179);
+  color: white;
+  font-weight: bold;
+  border:none;
+  padding: 10px 15px;
+  border-radius:10px;
+  cursor: pointer;
+  font-size:15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.507);
+}
+.title-main button:hover{
+  background-color: rgb(96, 51, 218);
+}
+.title-main button:active{
+  transform: scale(0.9);
+}
+.form-add{
+  background-color:white;
+  border:1px solid rgb(196, 195, 195);
+  width: 600px;
+  padding: 50px;
+  border-radius:10px; 
+  margin-left:auto;
+  margin-right: auto;
+  height: auto;
+}
+.form-freelancer{
+  width: 600px;
+
+}
+.grid-add-freelancer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-add div{
+  margin: 5px;
+}
+.agregar-form{
+  width: 100%;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color:rgb(136, 0, 255);
+  border-radius: 10px;
+  color: white;
+  box-shadow:1px 1px 4px rgba(0, 0, 0, 0.13);
+}
+.agregar-form:active{
+  transform: scale(0.9);
+}
+@media (max-width:720px){
+  .grid-add-freelancer{
+    text-align: center;
+    grid-template-columns: 1fr ;
+  }
+  .form-freelancer{
+    width: 300px;
+  
+  }
+}
+.flex-CardFreelnacer{
+  display: flex;
+
+}
+.CardFreelancer{
+  width:300px;
+  padding:15px;
+  border-radius: 10px;
+  margin:15px;
+  background-color: white;
+  border:1px solid rgb(196, 195, 195);
+
+}
+
+.grid-card-freelancer{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.CardFreelancer a{
+  color: blue;
+}
