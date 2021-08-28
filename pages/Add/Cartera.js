@@ -102,14 +102,14 @@ export default function Cartera(){
                         {valor.Clientes.length===0?
                             <span></span>    
                             :valor.Clientes.map(doc=>
-                                <span className="mini-card">{doc.NombreCompleto}<button onClick={()=>removeItemFromArray(valor.Clientes,doc)}>X</button></span>
+                                <span key={doc.id} className="mini-card">{doc.NombreCompleto}<button onClick={()=>removeItemFromArray(valor.Clientes,doc)}>X</button></span>
                             )
                         } 
                 </div>
                     <div>
                         {arrayCliente.length === 0?<span></span>
                             :arrayCliente.map(doc=>
-                                <div onClick={()=>clickCliente(doc)} className="searchBuscar">
+                                <div key={doc.id} onClick={()=>clickCliente(doc)} className="searchBuscar">
                                     <div className="NombreCompleto">{doc.NombreCompleto}</div>
                                     <div>{doc.id}</div>
                                 </div>    
@@ -123,7 +123,7 @@ export default function Cartera(){
                             :valor.Freelancer.map(doc=>
                                 <>
                                 
-                                <span className="mini-card">{doc.NombreCompleto}<button onClick={()=>removeItemFromArray(valor.Freelancer,doc)} >X</button></span>
+                                <span key={doc.id} className="mini-card">{doc.NombreCompleto}<button onClick={()=>removeItemFromArray(valor.Freelancer,doc)} >X</button></span>
                                 </>
                             )
                         } 
@@ -131,7 +131,7 @@ export default function Cartera(){
                     <div>
                         {arrayFreelancer.length === 0?<span></span>
                             :arrayFreelancer.map(doc=>
-                                <div onClick={()=>clickFreelancer(doc)} className="searchBuscar">
+                                <div key={doc.id} onClick={()=>clickFreelancer(doc)} className="searchBuscar">
                                     <div className="NombreCompleto">{doc.NombreCompleto}</div>
                                     <div>{doc.Habilidades}</div>
                                 </div>    
