@@ -21,7 +21,10 @@ export default function Clientes(){
             <div className="grid-card-freelancer">
                 {data.length!=0?
                     data.map(doc=>
-                        <CardClientes Nombre={doc.NombreCompleto} Correo={doc.CorreoElectronico} Telefono={doc.NumeroTelefonico} Pago={doc.MetodoPago}/>
+                        <div key={doc.id}>
+                            <CardClientes Nombre={doc.NombreCompleto} Correo={doc.CorreoElectronico} Telefono={doc.NumeroTelefonico} Pago={doc.MetodoPago}/>
+
+                        </div>
                     )
                     :<h1>Por ahora no hy freelancer</h1>
                 }

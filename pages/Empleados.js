@@ -20,7 +20,10 @@ export default function Empleados(){
             <div className="grid-card-freelancer">
                 {data.length!=0?
                     data.map(doc=>
-                        <CardFreelancer Nombre={doc.NombreCompleto} Correo={doc.CorreoElectronico} Telefono={doc.NumeroTelefonico} Habilidades={doc.Habilidades} Portafolio={doc.Portafolio}/>
+                        <div key={doc.id}>
+                            <CardFreelancer  Nombre={doc.NombreCompleto} Correo={doc.CorreoElectronico} Telefono={doc.NumeroTelefonico} Habilidades={doc.Habilidades} Portafolio={doc.Portafolio}/>
+
+                        </div>
                     )
                     :<h1>Por ahora no hy freelancer</h1>
                 }
